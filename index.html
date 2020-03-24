@@ -7,10 +7,11 @@
 			<p>
 			{{ message }}
 			</p>
-			<button v-on:click="reverseMessage">Reverse Message</button>
+			<input v-model="message">
+      <button v-on:click="reverseMessage">Reverse Message</button>
 		</div>
 	</body>
-
+  
 	<script>
 		var app = new Vue({
 			el: '#app',
